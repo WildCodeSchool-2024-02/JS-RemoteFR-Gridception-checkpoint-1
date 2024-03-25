@@ -55,12 +55,7 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
-}
-
-.skills--title {
-  margin: calc(var(--gutter) * -2) 0;
-  text-align: var(--textAlign);
-}
+  }
 
 .column {
   border-left: var(--styledBorder);
