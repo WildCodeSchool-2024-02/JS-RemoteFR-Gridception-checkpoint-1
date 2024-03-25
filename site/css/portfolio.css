@@ -28,6 +28,24 @@ p {
   margin-bottom: var(--gutter);
 }
 
+@media screen and (width >=700px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .first-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+
+}
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
@@ -60,6 +78,18 @@ p {
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+}
+
+@media screen and (width >=700px) {
+  .article_side_by_side {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .skills--title {
+    padding: 3rem;
+  }
 }
 
 .column {
