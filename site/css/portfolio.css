@@ -131,6 +131,22 @@ p {
   color: var(--purple);
 }
 
+@media screen and (min-width: 700px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.recent-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -149,4 +165,8 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.disabled {
+  opacity: 0.5;
 }
