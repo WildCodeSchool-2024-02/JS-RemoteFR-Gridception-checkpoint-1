@@ -17,4 +17,7 @@ createButton.addEventListener("click", function () {
   const firstName = document.querySelector("#firstname");
   firstName.textContent = name;
   firstName.style.color = "white";
+  const colorChange = prompt("Choose a color");
+  const backGround = document.querySelector(".pink-bg");
+  backGround.style.backgroundColor = colorChange;
 });
