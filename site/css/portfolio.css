@@ -31,6 +31,8 @@ h2 {
 }
 p {
   padding: 0 var(--gutter);
+  display: flex;
+  justify-content: center;
 }
 
 .menu {
@@ -69,9 +71,12 @@ p {
   padding: 0 10%;
   @media screen and (min-width:700px) {
     display: flex;
-    justify-content: center;
-    flex-direction: row-reverse
+    justify-content: space-between;
     width: auto;
+  }
+  @media screen and (max-width:700px) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
 }
@@ -94,11 +99,7 @@ p {
     display: flex;
     flex-direction: column;
   }
-  @media screen and (max-width:700px) {
-    display: flex;
-    flex-direction: column;
-    order: 1 0;
-  }
+
 }
 
 .column:first-of-type {
@@ -123,14 +124,22 @@ p {
 .projects a {
   color: var(--purple);
 }
-
+article.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: auto;
+}
 .box {
-  width: 25%;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .purple-text {
