@@ -139,7 +139,8 @@ article.projects {
   display: inline-block;
   justify-content: center;
   align-items: center;
-
+  max-width: fit-content;
+  
 }
 
 .purple-text {

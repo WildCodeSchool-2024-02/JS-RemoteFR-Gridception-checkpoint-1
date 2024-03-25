@@ -23,16 +23,14 @@ const persons = [
   { name: 'Penelope Cruz', age: 47, sex: 'female' },
 ];
 
-const separateFemaleAnDMale = (array) =>
-  
 function findAdults(persons) {
-  const findAdults = (array) => {
 
-    const female = array.filter((persons) => {
-    return persons.sex === "female";
-  });
-    const male = array.filter((persons) => persons.sex === "male");
-}
-}
+  const isFemale = persons.filter(
+    (female) => female.sex === "female" && female.age >= 18);
 
+  const isMale = persons.filter(
+    (male) => male.sex === "male" && male.age >= 18);
+
+  return [isFemale, isMale];
+}
 module.exports = findAdults;
