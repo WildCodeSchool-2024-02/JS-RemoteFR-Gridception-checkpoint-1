@@ -11,8 +11,23 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 ["1:0", "2:0", "3:0", "4:4", "2:2", "3:3", "1:4", "2:3", "2:4", "3:3"]
 */
 
+
 function getPoints(results) {
-  // Your code here !
+  var totalPoints = 0;
+
+  for (let i = 0; i <= results.length - 1; i++) {
+
+    let chiffres = results[i].split(":");
+    if (chiffres[0] > chiffres[1]) {
+      totalPoints += 3;
+    }
+    else if (chiffres[0] === chiffres[1]) {
+      totalPoints += 1;
+    }
+  }
+  return totalPoints;
 }
+
+
 
 module.exports = getPoints;
