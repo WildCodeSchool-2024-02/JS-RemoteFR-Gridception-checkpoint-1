@@ -13,12 +13,22 @@
 
 img {
   max-width: 100%;
+
 }
 
 h1 {
   font-size: calc(var(--gutter) * 1.5);
 }
+section.first-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+h2 {
+  display: flex;
+  justify-content: center;
+}
 p {
   padding: 0 var(--gutter);
 }
@@ -32,6 +42,8 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -55,6 +67,13 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  @media screen and (min-width:700px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse
+    width: auto;
+  }
+
 }
 
 .skills--title {
@@ -71,6 +90,15 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  @media screen and (min-width:700px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (max-width:700px) {
+    display: flex;
+    flex-direction: column;
+    order: 1 0;
+  }
 }
 
 .column:first-of-type {
@@ -108,3 +136,10 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+.desktop {
+  @media screen and (max-width: 700px) {
+      display: none;
+  }
+}
+

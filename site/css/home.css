@@ -14,9 +14,6 @@ main {
   padding: calc(var(--gutter) * 3);
 }
 
-h1 {
-  text-align: center;
-}
 
 article:first-of-type h2:last-of-type,
 article:not(:first-of-type) {
