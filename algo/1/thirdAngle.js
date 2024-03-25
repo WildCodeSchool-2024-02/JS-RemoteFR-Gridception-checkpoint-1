@@ -6,9 +6,9 @@ thirdAngle(90, 30) doit retourner 60
 thirdAngle(20, 80) doit retourner 80
 */
 
-function thirdAngle(a=90, b=30) {
+function thirdAngle(a,b) {
   
-  console.log(180-(a+b));
+  return (180-(a+b));
 };
 thirdAngle();
 
