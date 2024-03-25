@@ -31,8 +31,11 @@ p {
 @media screen and (width >=700px) {
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+  }
 
+  ul {
+    padding-left: 25rem;
   }
 
   .first-banner {
