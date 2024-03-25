@@ -35,7 +35,9 @@ p {
   }
   .skills {
     display: flex;
+    justify-content: center;
     flex-direction: row-reverse;
+   
   }
   .skills--title {
     display: none;
