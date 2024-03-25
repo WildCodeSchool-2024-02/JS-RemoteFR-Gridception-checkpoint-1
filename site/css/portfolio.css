@@ -67,7 +67,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -107,4 +107,30 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
