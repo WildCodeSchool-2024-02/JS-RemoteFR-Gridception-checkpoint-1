@@ -30,6 +30,7 @@ button.addEventListener("click", () => {
   const newColor = prompt("Enter a color in hex");
   const bgColor = document.getElementsByClassName("pink-bg");
   const titleColor = document.querySelectorAll(".pink-text");
+  const links = document.querySelectorAll("a");
 
   name.textContent = newName;
   name.style.color = "white";
@@ -40,4 +41,6 @@ button.addEventListener("click", () => {
   }
 
   titleColor.forEach((element) => (element.style.color = newColor));
+
+  links.forEach((element) => (element.style.color = newColor));
 });
