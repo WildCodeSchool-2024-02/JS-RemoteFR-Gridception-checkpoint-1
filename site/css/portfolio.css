@@ -112,6 +112,13 @@ p {
   padding: 0;
 }
 
+button {
+  color: var(--cardColor);
+  background-color: var(--lightWildColor);
+  padding: 0.5%;
+  border-radius: 6px;
+}
+
 .pink-text {
   color: var(--lightWildColor);
 }
