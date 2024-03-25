@@ -133,4 +133,9 @@ p {
     display: flex;
     flex-direction: column-reverse;
   }
+  .hero-banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
