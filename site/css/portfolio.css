@@ -23,15 +23,35 @@ p {
   padding: 0 var(--gutter);
 }
 
+nav {
+  @media screen and (min-width: 700px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
 }
 
+.first-banner {
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .desktop {
+  display: none;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+
+  @media screen and (min-width: 700px) {
+    display: block;
+  }
 }
 
 .description {
@@ -55,11 +75,26 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 700px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem 0;
+  }
 }
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+
+  order: 0;
+
+  @media screen and (min-width: 700px) {
+    width: 100%;
+  }
 }
 
 .column {
@@ -67,15 +102,23 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  @media screen and (min-width: 700px) {
+    width: 50%;
+  }
 }
 
 .column:first-of-type {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+  order: 2;
+}
+
+.column:nth-of-type(2) {
+  order: 1;
 }
 
 .column:last-child {
@@ -90,6 +133,20 @@ p {
 
 .pink-text {
   color: var(--lightWildColor);
+}
+
+.projects {
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.projects h2,
+.projects p {
+  width: 100%;
+  text-align: center;
 }
 
 .projects a {
@@ -107,4 +164,8 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.disabled {
+  opacity: 0.5;
 }
