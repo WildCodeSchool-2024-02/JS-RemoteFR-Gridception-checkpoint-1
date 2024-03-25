@@ -11,6 +11,78 @@
   --textAlign: center;
 }
 
+/******* STEP 1 ********/
+@media  screen and (min-width: 700px) {
+    header nav {
+    display: flex;
+    justify-content: space-between;
+    img{
+      justify-content: flex-start;
+    }
+    ul{
+      justify-content:flex-end ;
+    }
+  }
+}
+
+/******* STEP 2 ********/
+@media screen and (min-width: 700px) {
+    .firstbanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+      width: 25%;
+    }
+  }
+}
+
+/******* STEP 3 ********/
+@media screen and (max-width: 700px) {
+  .desktop{
+    img{
+      display: none;
+    }
+  }
+}
+
+/******* STEP 4 ********/
+
+@media screen and (min-width: 700px){
+  .skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    h2{ 
+      display: none;
+    }
+  }
+}
+
+/******* STEP 5 ********/
+
+@media screen and (max-width: 700px){
+  .skills{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+/******* STEP 6 ********/
+@media screen and (min-width: 700px){
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+
+
+
+
 img {
   max-width: 100%;
 }

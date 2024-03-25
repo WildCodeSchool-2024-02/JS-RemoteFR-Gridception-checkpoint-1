@@ -8,7 +8,9 @@ header nav ul {
   justify-content: flex-end;
   width: 100%;
   align-items: center;
+
 }
+
 
 main {
   padding: calc(var(--gutter) * 3);
