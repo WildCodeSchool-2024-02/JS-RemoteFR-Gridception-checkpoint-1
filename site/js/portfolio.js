@@ -7,7 +7,7 @@ imgAvatar.addEventListener('click', function () {
 
 const buttonModify = document.querySelector("#button_modify");
 const firstName = document.querySelector("#firstname");
-const backgroundSection = document.querySelector(".description pink-bg");
+const backgroundSection = document.querySelector(".pink-bg");
 
 buttonModify.addEventListener('click', function () {
     const nameUser = prompt("What's your name ?");
