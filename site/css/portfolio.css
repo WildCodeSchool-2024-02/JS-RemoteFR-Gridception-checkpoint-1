@@ -23,10 +23,43 @@ p {
   padding: 0 var(--gutter);
 }
 
+@media screen and (min-width : 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .first-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .skills--title {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width : 700px) {
+  .desktop{
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .skills--title {
+   display : none;
+  } 
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
-}
+} 
 
 .desktop {
   margin: 0;
