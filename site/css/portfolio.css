@@ -205,7 +205,7 @@ h2 {
 
   .box {
     width: 250px;
-    display: ;
+    /* display: ; */
     flex-direction: column;
     width: 60%;
     align-items: center;

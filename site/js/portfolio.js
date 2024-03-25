@@ -7,13 +7,11 @@ changeImage.addEventListener("click", function () {
 
 const changeFirstName = document.getElementById("firstname");
 const myButton = document.getElementById("myButton");
+const changeBG = document.getElementsByClassName("pink-bg");
 
 myButton.addEventListener("click", function () {
-    changeFirstName.innerText(prompt("Enter your name: "));
+    changeFirstName.textContent = prompt("Enter your name: ");
+    changeFirstName.style.color = "white";
+    changeBG.style.backgroundColor = "#750ff7";
 });
 
-// myButton.addEventListener("click", function () {
-//     let NouveauNom = prompt("Enter your name: ");
-//     console.log(NouveauNom);
-//     changeFirstName.innerText(NouveauNom);
-// });
