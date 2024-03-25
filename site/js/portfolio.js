@@ -11,7 +11,7 @@ changeAvatar.addEventListener("click", function () {
 });
 
 const boutonPopup = document.createElement("button");
-boutonPopup.textContent = "Modifier prénom et couleur";
+boutonPopup.textContent = "Modify text and color";
 
 const paragraphe = document.querySelector(".description p");
 
@@ -35,6 +35,10 @@ boutonPopup.addEventListener("click", function () {
       });
       const textRose = document.querySelectorAll(".pink-text");
       textRose.forEach(function (element) {
+        element.style.color = couleur;
+      });
+      const lien = document.querySelectorAll("a");
+      lien.forEach(function (element) {
         element.style.color = couleur;
       });
     }
