@@ -23,16 +23,35 @@ p {
   padding: 0 var(--gutter);
 }
 
+.avatar-presentation {
+  justify-content: center;
+  text-align: center;
+}
+
+.avatar {
+  display: block;
+  margin: 0 auto;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
 }
 
 .desktop {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
+  width: 800px;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+
+  @media(max-width : 700px) {
+    img {
+      display: none;
+    }
+  }
 }
+
 
 .description {
   color: var(--light);
@@ -48,16 +67,35 @@ p {
 }
 
 .pink-bg {
-  background-color: var(--lightWildColor);
+  width: 100%;
+  background-color: var(--purple);
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 .skills {
+  display: flex;
+  justify-content: center;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+
+  @media(max-width:700px) {
+    display: flex;
+    flex-direction: column;
+  }
+  /*@media(min-width: 701px) {
+    display: flex;
+    flex-direction: column-reverse;
+  } */
 }
 
 .skills--title {
+  text-align: center;
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
@@ -67,7 +105,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
