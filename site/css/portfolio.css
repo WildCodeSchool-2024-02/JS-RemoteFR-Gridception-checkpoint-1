@@ -15,9 +15,8 @@ img {
   max-width: 100%;
 }
 header>nav{
-  @media and screen(min-width:700px)
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width:700px){  display: flex;
+  justify-content: space-between;}
   
   }
 
@@ -35,9 +34,14 @@ p {
 }
 
 .desktop {
-  margin: 0;
+  
+    margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  @media screen and (max-width:700px)
+     {
+      display: none;
+    }
 }
 
 .description {
@@ -61,7 +65,10 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
-}
+  @media screen and (min-width:700px) {
+     display: flex;        flex-direction: row;
+     justify-content: center;
+}}
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
@@ -114,3 +121,4 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
