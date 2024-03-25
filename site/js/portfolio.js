@@ -44,3 +44,17 @@ button.addEventListener("click", () => {
 
   links.forEach((element) => (element.style.color = newColor));
 });
+
+const columns = document.querySelectorAll(".column");
+
+const frontButton = document.createElement("button");
+frontButton.innerText = "Modify";
+columns[1].appendChild(frontButton);
+
+frontButton.addEventListener("click", () => {
+  const frontlinks = columns[1].querySelectorAll("li");
+
+  frontlinks[0].innerText = "VSCode";
+  frontlinks[1].innerText = "Github";
+  frontlinks[2].innerText = "Terminal";
+});
