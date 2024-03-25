@@ -12,7 +12,6 @@ avatar.addEventListener("click", () => {
 const name = document.getElementById("firstname");
 
 const description = document.getElementsByClassName("description");
-console.log(description[0]);
 
 // description[0].innerHTML += "<button>Modify Text And Color</button>";
 
@@ -28,6 +27,17 @@ description[0].appendChild(button);
 
 button.addEventListener("click", () => {
   const newName = prompt("Enter your name");
+  const newColor = prompt("Enter a color in hex");
+  const bgColor = document.getElementsByClassName("pink-bg");
+  const titleColor = document.querySelectorAll(".pink-text");
+
   name.textContent = newName;
   name.style.color = "white";
+  //   description[0].style.backgroundColor = newColor;
+
+  for (let i = 0; i < bgColor.length; i++) {
+    bgColor[i].style.backgroundColor = newColor;
+  }
+
+  titleColor.forEach((element) => (element.style.color = newColor));
 });
