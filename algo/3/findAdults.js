@@ -30,8 +30,7 @@ function findAdults(persons) {
   const adultMales = persons.filter(
     (persons) => persons.age >= 18 && persons.sex === "male"
   );
- return [ adultFemales, adultMales];
-
+  return [adultFemales, adultMales];
 }
 
 module.exports = findAdults;
