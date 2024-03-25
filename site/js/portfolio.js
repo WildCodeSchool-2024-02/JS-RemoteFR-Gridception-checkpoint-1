@@ -58,3 +58,18 @@ frontButton.addEventListener("click", () => {
   frontlinks[1].innerText = "Github";
   frontlinks[2].innerText = "Terminal";
 });
+
+const inputBackend = document.createElement("input");
+columns[0].appendChild(inputBackend);
+
+const buttonBackend = document.createElement("button");
+buttonBackend.innerText = "Create";
+columns[0].appendChild(buttonBackend);
+
+buttonBackend.addEventListener("click", () => {
+  const newLi = document.createElement("li");
+  newLi.innerText = inputBackend.value;
+
+  const ul = columns[0].querySelector("ul");
+  ul.appendChild(newLi);
+});
