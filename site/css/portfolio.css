@@ -15,6 +15,36 @@ img {
   max-width: 100%;
 }
 
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .desktop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    margin-top: calc(var(--gutter) * 5);
+    margin-bottom: calc(var(--gutter) * -0.3125);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .imgdesktop {
+    display: none;
+  }
+}
+
+.avatarimg {
+  padding-bottom: 60px;
+}
+
 h1 {
   font-size: calc(var(--gutter) * 1.5);
 }
@@ -26,12 +56,6 @@ p {
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
-}
-
-.desktop {
-  margin: 0;
-  margin-top: calc(var(--gutter) * 5);
-  margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
 .description {
@@ -47,19 +71,26 @@ p {
   text-align: var(--textAlign);
 }
 
-.pink-bg {
-  background-color: var(--lightWildColor);
-}
-
-.skills {
-  margin-top: calc(var(--gutter) * -2);
-  border-radius: var(--radius);
-  padding: 0 10%;
-}
-
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+}
+
+@media screen and (min-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: calc(var(--gutter) * -2);
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .column {
@@ -67,7 +98,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -107,4 +138,12 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.white-text {
+  color: white !important;
+}
+
+.article1 {
+  background-color: var(--lightWildColor);
 }
