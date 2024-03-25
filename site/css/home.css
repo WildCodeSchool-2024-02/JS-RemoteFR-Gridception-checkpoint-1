@@ -3,13 +3,31 @@ body {
   color: var(--textColor);
 }
 
+@media screen and (min-width : 700px){
+  .start{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+  }
+  @media screen and (max-width : 700px) {
+  .computer {
+    display: none;
+  }
+  }
+
 header nav ul {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   align-items: center;
 }
-
+@media screen and (min-width: 700px) {
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+}
 main {
   padding: calc(var(--gutter) * 3);
 }
